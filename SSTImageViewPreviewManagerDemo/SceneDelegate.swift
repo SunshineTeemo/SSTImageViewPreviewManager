@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SSTImageViewPreviewManagerDemo
 //
-//  Created by 梅琰培 on 3/15/21.
+//  Created by SST on 3/15/21.
 //
 
 import UIKit

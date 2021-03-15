@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		9342D91D25FEF8B800E3A563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9342D91B25FEF8B800E3A563 /* Main.storyboard */; };
 		9342D91F25FEF8BB00E3A563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9342D91E25FEF8BB00E3A563 /* Assets.xcassets */; };
 		9342D92225FEF8BB00E3A563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9342D92025FEF8BB00E3A563 /* LaunchScreen.storyboard */; };
+		9342D93425FF03C800E3A563 /* SSTImageViewPreviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342D93325FF03C800E3A563 /* SSTImageViewPreviewManager.swift */; };
+		9342D93725FF047600E3A563 /* SSTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342D93625FF047600E3A563 /* SSTCollectionViewCell.swift */; };
+		E6D36AC096AEFF07DFCCF52F /* Pods_SSTImageViewPreviewManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45AAE07F9D836657520BB585 /* Pods_SSTImageViewPreviewManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3850C081A5D96CE75E1E92E8 /* Pods-SSTImageViewPreviewManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSTImageViewPreviewManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-SSTImageViewPreviewManagerDemo/Pods-SSTImageViewPreviewManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		45AAE07F9D836657520BB585 /* Pods_SSTImageViewPreviewManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSTImageViewPreviewManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA8C91D867985A681174FDB /* Pods-SSTImageViewPreviewManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSTImageViewPreviewManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-SSTImageViewPreviewManagerDemo/Pods-SSTImageViewPreviewManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9342D91225FEF8B800E3A563 /* SSTImageViewPreviewManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSTImageViewPreviewManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9342D91525FEF8B800E3A563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9342D91725FEF8B800E3A563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		9342D91E25FEF8BB00E3A563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9342D92125FEF8BB00E3A563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9342D92325FEF8BB00E3A563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9342D93325FF03C800E3A563 /* SSTImageViewPreviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTImageViewPreviewManager.swift; sourceTree = "<group>"; };
+		9342D93625FF047600E3A563 /* SSTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6D36AC096AEFF07DFCCF52F /* Pods_SSTImageViewPreviewManagerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235DCC413479D1DC19D34F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3850C081A5D96CE75E1E92E8 /* Pods-SSTImageViewPreviewManagerDemo.debug.xcconfig */,
+				8BA8C91D867985A681174FDB /* Pods-SSTImageViewPreviewManagerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50C1474B4283C8891A0CEE1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45AAE07F9D836657520BB585 /* Pods_SSTImageViewPreviewManagerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9342D90925FEF8B800E3A563 = {
 			isa = PBXGroup;
 			children = (
 				9342D91425FEF8B800E3A563 /* SSTImageViewPreviewManagerDemo */,
 				9342D91325FEF8B800E3A563 /* Products */,
+				235DCC413479D1DC19D34F63 /* Pods */,
+				50C1474B4283C8891A0CEE1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,25 @@
 		9342D91425FEF8B800E3A563 /* SSTImageViewPreviewManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9342D93125FF03B100E3A563 /* SSTImageVIewPreviewManager */,
 				9342D91525FEF8B800E3A563 /* AppDelegate.swift */,
 				9342D91725FEF8B800E3A563 /* SceneDelegate.swift */,
 				9342D91925FEF8B800E3A563 /* ViewController.swift */,
+				9342D93625FF047600E3A563 /* SSTCollectionViewCell.swift */,
 				9342D91B25FEF8B800E3A563 /* Main.storyboard */,
 				9342D91E25FEF8BB00E3A563 /* Assets.xcassets */,
 				9342D92025FEF8BB00E3A563 /* LaunchScreen.storyboard */,
 				9342D92325FEF8BB00E3A563 /* Info.plist */,
 			);
 			path = SSTImageViewPreviewManagerDemo;
+			sourceTree = "<group>";
+		};
+		9342D93125FF03B100E3A563 /* SSTImageVIewPreviewManager */ = {
+			isa = PBXGroup;
+			children = (
+				9342D93325FF03C800E3A563 /* SSTImageViewPreviewManager.swift */,
+			);
+			path = SSTImageVIewPreviewManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9342D92625FEF8BB00E3A563 /* Build configuration list for PBXNativeTarget "SSTImageViewPreviewManagerDemo" */;
 			buildPhases = (
+				FAD45D11BE1589FEDA00E3C0 /* [CP] Check Pods Manifest.lock */,
 				9342D90E25FEF8B800E3A563 /* Sources */,
 				9342D90F25FEF8B800E3A563 /* Frameworks */,
 				9342D91025FEF8B800E3A563 /* Resources */,
+				B8B995A1B5AF4593D93F6427 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +172,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B8B995A1B5AF4593D93F6427 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSTImageViewPreviewManagerDemo/Pods-SSTImageViewPreviewManagerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSTImageViewPreviewManagerDemo/Pods-SSTImageViewPreviewManagerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSTImageViewPreviewManagerDemo/Pods-SSTImageViewPreviewManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD45D11BE1589FEDA00E3C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSTImageViewPreviewManagerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9342D90E25FEF8B800E3A563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9342D93425FF03C800E3A563 /* SSTImageViewPreviewManager.swift in Sources */,
 				9342D91A25FEF8B800E3A563 /* ViewController.swift in Sources */,
 				9342D91625FEF8B800E3A563 /* AppDelegate.swift in Sources */,
 				9342D91825FEF8B800E3A563 /* SceneDelegate.swift in Sources */,
+				9342D93725FF047600E3A563 /* SSTCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +367,14 @@
 		};
 		9342D92725FEF8BB00E3A563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3850C081A5D96CE75E1E92E8 /* Pods-SSTImageViewPreviewManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q4QBC7T73;
 				INFOPLIST_FILE = SSTImageViewPreviewManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +382,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SS.SSTImageViewPreviewManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9342D92825FEF8BB00E3A563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA8C91D867985A681174FDB /* Pods-SSTImageViewPreviewManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q4QBC7T73;
 				INFOPLIST_FILE = SSTImageViewPreviewManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SS.SSTImageViewPreviewManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module Pods_SSTImageViewPreviewManagerDemo {
+  umbrella header "Pods-SSTImageViewPreviewManagerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
